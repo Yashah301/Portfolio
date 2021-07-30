@@ -1,0 +1,24 @@
+<div id="intro">
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+        <div class="row">
+            <div class="center-box">
+                <h5 style="">Contact Me</h5>
+                <h1 style="">I'd Love To Hear From You.</h1>
+                <div>
+                    <form name="contactForm" onsubmit="return(validateForm())" action="/ContactMe">
+                        <input type="text" name="name" class="inputField" placeholder="Full Name">
+                        <p class="errorLabel" id="nameErrorLabel">Please Enter valid Name</p>
+                        <input type="text" name="email" class="inputField" placeholder="Email">
+                        <p class="errorLabel" id="emailErrorLabel">Please Enter valid Email</p>
+                        <input type="number" name="contact" class="inputField" placeholder="Contact">
+                        <p class="errorLabel" id="contactErrorLabel">Please Enter valid Contact</p>
+                        <textarea name="msg" name="msg" cols="40" rows="3" placeholder="Message"></textarea>
+                        <p class="errorLabel" id="msgErrorLabel">Message cannot be Empty</p>
+                    </form>
+                </div>
+                <button class="subBtn" onclick="validateForm()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</div>
