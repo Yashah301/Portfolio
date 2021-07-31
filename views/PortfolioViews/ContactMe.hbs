@@ -6,7 +6,7 @@
                 <h5 style="">Contact Me</h5>
                 <h1 style="">I'd Love To Hear From You.</h1>
                 <div>
-                    <form name="contactForm" onsubmit="return(validateForm())" action="/ContactMe">
+                    <form name="contactForm" action="/ContactMe">
                         <input type="text" name="name" class="inputField" placeholder="Full Name">
                         <p class="errorLabel" id="nameErrorLabel">Please Enter valid Name</p>
                         <input type="text" name="email" class="inputField" placeholder="Email">
@@ -17,7 +17,7 @@
                         <p class="errorLabel" id="msgErrorLabel">Message cannot be Empty</p>
                     </form>
                 </div>
-                <button class="subBtn" onclick="validateForm()">SUBMIT</button>
+                <button type="submit" class="subBtn" onclick="validateForm()">SUBMIT</button>
             </div>
         </div>
     </div>

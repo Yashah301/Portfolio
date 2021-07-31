@@ -37,6 +37,14 @@ function validateForm() {
 
   if(flag){
     alert('Submitted Successfully ✔');
+    resetALl();
   }
   return flag;
+}
+
+function resetALl(){
+  document.forms["contactForm"]["name"].value='';
+  document.forms["contactForm"]["email"].value='';
+  document.forms["contactForm"]["contact"].value='';
+  document.forms["contactForm"]["msg"].value='';
 }
