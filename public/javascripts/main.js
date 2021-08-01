@@ -37,14 +37,22 @@ function validateForm() {
 
   if(flag){
     alert('Submitted Successfully ✔');
-    resetALl();
+    ResetAll();
   }
   return flag;
 }
 
-function resetALl(){
+function ResetAll(){
   document.forms["contactForm"]["name"].value='';
   document.forms["contactForm"]["email"].value='';
   document.forms["contactForm"]["contact"].value='';
   document.forms["contactForm"]["msg"].value='';
+}
+
+function HidePreloader(){
+
+  setTimeout(()=>{
+    document.getElementById("loader").style.display = "none"
+  },200);
+
 }

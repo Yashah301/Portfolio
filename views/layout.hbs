@@ -18,8 +18,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-
+<body onload="HidePreloader()">
+  <div id="loader">
+    <div id="spinner"></div>
+  </div>
   {{!-- Bootstrap Nav Bar ref:www.w3schools.com --}}
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: auto">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
