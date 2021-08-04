@@ -362,6 +362,7 @@ hr {
 .centerBox {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -379,7 +380,6 @@ hr {
 
 .card {
   flex: 1;
-  background-color: white;
   margin-left: 20px;
   transition: 0.8s;
   justify-content: center;
